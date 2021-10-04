@@ -1,0 +1,25 @@
+---
+title: "Assignment_2_LiShan"
+author: "LiShan"
+date: "2021/10/5"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Airquality dataset
+
+The following tables are the **air quality dataset** and the dataset with the *NA value* removed.  
+```{r cars}
+summary(cars)
+
+airquality
+data.frame(airquality)
+
+clean <- complete.cases(airquality)
+airquality[clean, ][1:5, ]
+
+```
+
